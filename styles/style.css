@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "MADE-Sunflower";
+    src: url("../assets/MADE-Sunflower.otf")
+}
+
+@keyframes width-animation {
+    from{
+        width: 100px;
+    } to {
+        width: 400px;
+    }
+}
+
+@keyframes change-color2 {
+    0%{background: yellow ;}
+    50.0%{background: turquoise;}
+    100.0%{background: orangered;}
+}
+
+
+.rect {
+    width: 100px;
+    height: 100px;
+    animation: width-animation 0.5s infinite alternate ;
+    background-color: rgb(251, 255, 0);
+}
+#green {
+    border: 5px solid #02222e;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: 200;
+    padding: 10px;
+}
+body {
+    margin: 2cm;
+    background: linear-gradient(45deg, blue, red);
+    background-color: rgb(236, 245, 243);
+}
+h1{
+    font-size: 90px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    transition: all 0.6s;
+    animation: change-color2 1s infinite alternate;
+    text-shadow:5px 5px 5px yellowgreen;
+
+}
+h1:hover{
+    color: rgb(238, 223, 17);
+    filter: blur(0px)
+    
+
+}
+
+.beautiful-element {
+    color: rgb(0, 0, 0);
+ font-size: 20px;
+ font-family:"MADE-Sunflower";
+ margin: 20px;
+}
+
+.image {
+    width: 30%;
+    margin: 20px;
+    padding-bottom: 20px;
+    display: block;
+    box-shadow: 10px 10px 10px rgb(169, 253, 1);
+    border-radius: 10%;
+}
+.image img{
+    width: 80%;
+
+}
+.gallery {
+    display: flex;
+
+}
+.item{
+    flex: 1;
+}
+
+.item img{
+    width: 100%;
+    padding-bottom: 20px;
+    box-shadow: 10px 10px 10px rgb(169, 253, 1);
+    border-radius: 10%;
+    margin: 20px;
+    display: block;
+    
+}
