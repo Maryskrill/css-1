@@ -5,17 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css ">
+    <link rel="stylesheet" href="styles/poster.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Batman</title>
+    
 </head>
 <body>
-<h1>Batman</h1>
-<h2 id="green">1982</h2>
+<h1>Shopaholic</h1>
+<h2 id="green">2009</h2>
 <nav>
         <li><a href="index.html">Movie</a></li>
         <li><a href="poster.html">Poster</a></li>
 </nav>
-    <div class="wrapper"></div>
-    
+<style> 
+img {
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 0% 0%;
+  animation: mymove 5s infinite;
+}  
+@font-face {
+    font-size: 30px;
+    color: black;
+    font-family: "Chicken-Quiche";
+    src: url("assets/Chicken\ Quiche.otf");
+}
+@keyframes mymove {
+  0% {
+    object-position: 0% 0%;
+  }
+  25% {
+    object-position: 20% 0%;
+  }
+  100% {
+    object-position: 100% 100%;
+  }
+}
+</style>
+
+<img src="assets/Confessions-of-a-Shopoholic.jpeg" alt="Paris" width="400" height="300">
+
+<div class="wrapper">
+    <div class="background">background</div>
+    <div class="greenbox">green box</div>
+    <div class="goldbox">gold box</div>
+    <div class="figure">figure</div>
+    <div class="headline"><p>headline</p></div>
+    <div class="smth"><p>smth</p></div>
+</div>    
 </body>
 </html>

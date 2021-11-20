@@ -1,7 +1,20 @@
 @font-face {
-    font-family: "MADE-Sunflower";
-    src: url("../assets/MADE-Sunflower.otf")
+    font-family: "Chicken-Quiche";
+    src: url("assets/Chicken\ Quiche.otf");
 }
+@keyframes font-color-animation {
+    0% {color:rgb(204, 0, 255);}
+    25.0% {color: mediumslateblue;}
+    50.0% {color: rgb(0, 109, 128);}
+    100.0% {color: rgb(121, 218, 112);}
+
+    
+}
+@font-face {
+    font-family: "Chicken-Quiche";
+    src: url("assets/Chicken\ Quiche.otf");
+}
+
 
 @keyframes width-animation {
     from{
@@ -58,7 +71,7 @@ h1:hover{
 .beautiful-element {
     color: rgb(0, 0, 0);
  font-size: 20px;
- font-family:"MADE-Sunflower";
+ font-family:"Chicken-Quiche";
  margin: 20px;
 }
 
@@ -91,3 +104,25 @@ h1:hover{
     display: block;
     
 }
+.headline {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    z-index: 5;
+    color: lightslategray;
+    top: 100px;
+    left: 50px;
+    animation: color-animation 0.7s infinite alternate;
+}
+.headline:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50pt;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    z-index: 5;
+    color: rgb(6, 48, 90);
+    top: 100px;
+    left: 50px;
+ }
